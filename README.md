@@ -22,6 +22,6 @@ npm run build
 5. View a specific article.
 6. Returning from the article to the page with the list of articles;
 7. Deleting an article (if you add a token to the code src/store/actions/services,js value "accessToken", this functional is works);
-8.Mobile freandly
+8. Mobile friendly
 
 ```
