@@ -1,7 +1,7 @@
 import * as types from './mutation-types'
 
 export const mutations = {
-  [types.GET_POSTS_SUCCESS] (state, {posts, pagination}) {
+  [types.GET_POSTS_SUCCESS] (state, {posts = [], pagination}) {
     state.posts = posts.length ? posts : false
     state.pagination = { ...pagination }
   },

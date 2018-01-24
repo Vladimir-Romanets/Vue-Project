@@ -1,8 +1,6 @@
 <template>
   <div class='article' v-if='text.length || title.length'>
-    <h1>
-      {{title}}
-    </h1>
+    <h1>{{title}}</h1>
     <div class='article__created'>
       by <span class='article__author'>{{author}}</span> / {{createdAt}}
     </div>

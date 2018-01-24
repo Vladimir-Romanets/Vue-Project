@@ -14,6 +14,15 @@ npm run dev
 # build for production with minification
 npm run build
 
+# build for production and view the bundle analyzer report
+npm run build --report
+
+# run unit tests
+npm run unit
+
+# run all tests
+npm test
+
 #Functional description
 1. View a list of articles;
 2. Added pagination;
@@ -23,5 +32,6 @@ npm run build
 6. Returning from the article to the page with the list of articles;
 7. Deleting an article (if you add a token to the code src/store/actions/services,js value "accessToken", this functional is works);
 8. Mobile friendly
+9. Added unit tests with mock
 
 ```

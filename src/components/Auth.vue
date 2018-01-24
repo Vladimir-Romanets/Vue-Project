@@ -13,7 +13,9 @@ export default {
     }
   },
   created () {
-    this.$store.dispatch('auth')
+    const url = encodeURIComponent(window.location.href)
+    window.location.href = `https://frontend.recruiting.credy.com/auth?response_type=token&client_id=client&client_secret=secret&redirect_url=${url}`
+    // this.$store.dispatch('auth')
   }
 }
 </script>

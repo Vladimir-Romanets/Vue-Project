@@ -1,4 +1,5 @@
 import { request } from './request'
+import axios from 'axios'
 const accessToken = '04QkC_eNKQ7PONIOyhXJ77GAHw_zMF_tgKXuCG3W'
 
 export const getPosts = async (page) => {
@@ -28,7 +29,7 @@ export const getArticle = async (articleID) => {
 
 export const authFetch = async () => {
   try {
-    const { data } = await request.get('/auth?response_type=token&client_id=client&client_secret=secret&redirect_url=' + encodeURIComponent(location.href))
+    const { data } = await axios.get('https://frontend.recruiting.credy.com/auth?response_type=code&client_id=client&client_secret=secret&redirect_url=http://localhost:8080/#/posts/1')
     return data
   } catch (err) {
     console.log(err)
